@@ -1,1 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pumpkinnano - Games and Apps</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Pumpkinnano</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#apps">Apps</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section id="hero">
+        <h2>Welcome to Pumpkinnano!</h2>
+        <p>Play and download games and apps created by Pumpkin and Nano!</p>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games">
+        <h2>Our Games</h2>
+
+        <div class="card">
+            <img src="images/mothericon-512.png" alt="Mother">
+            <h3>Mother</h3>
+            <p>Fun and exciting game.</p>
+            <div class="game-actions">
+                <button class="play-btn" data-game="game1">Play Online</button>
+                <a href="downloads/mother-1_0_9.apk" class="download-btn">Download Android</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/pumpkinquestmagiceggadventure-icon-512.png" alt="Pumpkin quest magic egg adventure">
+            <h3>Pumpkin's Quest - The Magic Egg Adventure</h3>
+            <p>Another thrilling adventure.</p>
+            <div class="game-actions">
+                <button class="play-btn" data-game="game2">Play Online</button>
+                <a href="downloads/PumpkinsQuestTheMagicEggAdventure-1_0_3.apk" class="download-btn">Download Android</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apps Section -->
+    <!--<section id="apps">
+        <h2>Our Apps</h2>
+
+        <div class="card">
+            <img src="app1.jpg" alt="App 1">
+            <h3>App Title 1</h3>
+            <p>Useful and innovative app.</p>
+            <div class="app-actions">
+                <button class="play-btn" data-game="app1">Use Online</button>
+                <a href="downloads/app1.zip" class="download-btn">Download</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="app2.jpg" alt="App 2">
+            <h3>App Title 2</h3>
+            <p>Another innovative solution.</p>
+            <div class="app-actions">
+                <button class="play-btn" data-game="app2">Use Online</button>
+                <a href="downloads/app2.zip" class="download-btn">Download</a>
+            </div>
+        </div>
+    </section>
+-->
+    <footer>
+        <p>© 2024 Pumpkinnano. Created by Pumpkin and Nano.</p>
+    </footer>
+
+    <!-- Game Popup Overlays -->
+    <div id="game1-overlay" class="overlay">
+        <div class="popup">
+            <button class="close-btn">×</button>
+            <iframe id="game1-iframe" src="" frameborder="0" width="800" height="600" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="game2-overlay" class="overlay">
+        <div class="popup">
+            <button class="close-btn">×</button>
+            <iframe id="game2-iframe" src="" frameborder="0" width="800" height="600" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="app1-overlay" class="overlay">
+        <div class="popup">
+            <button class="close-btn">×</button>
+            <iframe id="app1-iframe" src="" frameborder="0" width="800" height="600" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="app2-overlay" class="overlay">
+        <div class="popup">
+            <button class="close-btn">×</button>
+            <iframe id="app2-iframe" src="" frameborder="0" width="800" height="600" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
